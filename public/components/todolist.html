@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/css/todolist-style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"/>
+    <title>To Do List</title>
+</head>
+<body>
+
+    <nav>
+        <header>
+            <a href="./index.html" class="logo">pemrograman web.</a>
+
+            <ul class="nav-list">
+                <li><a href="./calculator.html">Calculator</a></li>
+                <li><a href="./cart.html">Cart</a></li>
+                <li><a href="./forms.html">Forms</a></li>
+                <li><a href="./todolist.html">To Do List</a></li>
+            </ul>
+
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </header>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h5>Latihan 4</h5>
+            <h4>Daftar Tugas Dinamis</h4>
+
+            <div class="input-group">
+                <input type="text" id="taskTitle" placeholder="Judul Tugas" aria-label="Judul Tugas">
+                <input type="date" id="dueDate" aria-label="Tanggal Jatuh Tempo">
+                <select id="taskPriority" aria-label="Prioritas Tugas">
+                    <option value="normal">Normal</option>
+                    <option value="high">Tinggi</option>
+                    <option value="medium">Sedang</option>
+                    <option value="low">Rendah</option>
+                </select>
+                <input type="text" id="taskCategory" placeholder="Kategori/Tag Tugas" aria-label="Kategori/Tag Tugas">
+                <button class="btn" onclick="addTask()" aria-label="Tambah tugas">Tambah</button>
+            </div>
+
+            <div class="filters">
+                <button class="cta" onclick="filterTasks('all')">Semua</button>
+                <button class="cta" onclick="filterTasks('active')">Aktif</button>
+                <button class="cta" onclick="filterTasks('completed')">Selesai</button>
+            </div>
+            
+            <ul id="taskList"></ul>
+            <div id="taskStats"></div>
+        </div>
+
+        <div class="hero-img">
+            <img src="../src/img/list.png" alt="List">
+        </div>
+    </section>
+
+    <div class="sosmed">
+        <a href="https://www.instagram.com/yogiitmbnn_" target="_blank"><i class="ri-instagram-line ig"></i></a>
+        <a href="https://www.youtube.com/@xiigoy" target="_blank"><i class="ri-youtube-line yt"></i></a>
+        <a href="https://twitter.com/@zzyvnxx" target="_blank"><i class="ri-twitter-line twt"></i></a>
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="../src/javascript/todolist.js"></script>
+    
+</body>
+</html>
