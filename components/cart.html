@@ -10,9 +10,10 @@
 </head>
 <body>
     
+    <!-- Navigasi Utama -->
     <nav>
         <header>
-            <a href="./index.html" class="logo">pemrograman web.</a>
+            <a href="../index.html" class="logo">pemrograman web.</a>
 
             <ul class="nav-list">
                 <li><a href="./calculator.html">Calculator</a></li>
@@ -21,15 +22,18 @@
                 <li><a href="./todolist.html">To Do List</a></li>
             </ul>
 
+            <!-- Icon menu pada mobile -->
             <div class="bx bx-menu" id="menu-icon"></div>
         </header>
     </nav>
 
+    <!-- Bagian utama yang menampilkan keranjang belanja interaktif -->
     <section class="hero">
         <div class="hero-main">
             <h5>Latihan 2</h5>
             <h4>Keranjang Belanja Interaktif</h4>
 
+            <!-- Form untuk menambahkan item ke keranjang -->
             <div class="addItem">
                 <input type="text" id="itemName" placeholder="Nama Barang" required>
                 <input type="number" id="itemPrice" placeholder="Harga Barang" required>
@@ -38,6 +42,7 @@
             </div>
         </div>
 
+        <!-- Daftar item yang ada di keranjang -->
         <div class="hero-cart">
             <div class="cart">
                 <h4>Daftar Barang</h4>
@@ -49,13 +54,16 @@
         </div>
     </section>
 
+    <!-- Icon untuk media sosial -->
     <div class="sosmed">
         <a href="https://www.instagram.com/yogiitmbnn_" target="_blank"><i class="ri-instagram-line ig"></i></a>
         <a href="https://www.youtube.com/@xiigoy" target="_blank"><i class="ri-youtube-line yt"></i></a>
         <a href="https://twitter.com/@zzyvnxx" target="_blank"><i class="ri-twitter-line twt"></i></a>
     </div>
 
+    <!-- Library Javascript untuk efek scroll-->
     <script src="https://unpkg.com/scrollreveal"></script>
+    
     <script src="../src/javascript/cart.js"></script>
 
 </body>
