@@ -194,3 +194,126 @@ input {
     color: #1DA1F2;
     transform: scale(1.5);
 }
+
+@media (max-width: 1024px) {
+    /* Adjust the header for tablet screens */
+    nav header {
+        padding: 20px 5%;
+    }
+
+    .hero {
+        grid-template-columns: 1fr; /* Stack hero section vertically */
+        gap: 1rem;
+    }
+
+    .container h5, .container h4 {
+        font-size: 16px; /* Adjust heading font sizes */
+    }
+
+    .hero-img {
+        width: 100%; /* Make the hero image responsive */
+    }
+
+    .form-group {
+        margin-bottom: 10px; /* Reduce spacing for smaller screens */
+    }
+
+    input {
+        font-size: 14px; /* Increase input field font size for better readability */
+    }
+
+    .btn {
+        width: 100%; /* Make button full-width for smaller devices */
+        height: 50px;
+        font-size: 16px; /* Adjust button font size */
+    }
+
+    .sosmed {
+        display: none; /* Hide social media icons on tablets */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Make the navigation menu vertical and mobile-friendly */
+    .nav-list {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    #menu-icon {
+        display: block; /* Show the hamburger menu icon */
+    }
+
+    .nav-list a {
+        margin-left: 0;
+        margin-top: 10px;
+        font-size: 18px; /* Adjust font size for better readability */
+    }
+
+    .nav-list.open {
+        display: flex; /* Show the menu when opened */
+    }
+
+    .hero-img {
+        display: none; /* Hide the hero image on mobile */
+    }
+
+    .hero-main {
+        padding: 10px;
+    }
+
+    .btn {
+        width: 100%; /* Ensure buttons are full width */
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for smaller screens */
+    nav header {
+        padding: 10px 3%;
+    }
+
+    .logo {
+        font-size: 20px; /* Reduce logo size */
+    }
+
+    .container h5 {
+        font-size: 12px; /* Reduce subtitle font size */
+    }
+
+    .container h4 {
+        font-size: 14px; /* Reduce heading font size */
+    }
+
+    .form-group {
+        margin-bottom: 8px; /* Reduce space between form elements */
+    }
+
+    input {
+        font-size: 14px; /* Larger font size for mobile inputs */
+    }
+
+    .btn {
+        width: 100%; /* Full-width button */
+        height: 50px;
+        font-size: 14px; /* Reduce font size of button */
+    }
+
+    .sosmed {
+        display: block;
+        padding: 10px 5%;
+        transform: none;
+    }
+
+    .sosmed i {
+        font-size: 18px; /* Smaller social icons */
+    }
+}

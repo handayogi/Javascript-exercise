@@ -264,3 +264,110 @@ button.delete-btn {
     color: #1DA1F2;
     transform: scale(1.5);
 }
+
+@media (max-width: 1535px) {
+    nav header {
+        padding: 15px 3%;
+    }
+
+    .sosmed {
+        padding: 0 3%;
+    }
+}
+
+@media (max-width: 1460px) {
+    section {
+        padding: 0 12%;
+    }
+}
+
+@media (max-width: 1195px) {
+    section {
+        padding: 0 5%;
+    }
+
+    .hero-img {
+        text-align: center;
+    }
+
+    .hero-img img {
+        width: 80%;
+        height: auto;
+    }
+
+    .hero {
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+
+    .sosmed {
+        display: none;
+    }
+}
+
+@media (max-width: 990px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 300px;
+        height: 40vh;
+        background: rgb(255, 15, 15);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 50px 20px;
+        transition: all .55s ease;
+    }
+
+    .nav-list a {
+        display: block;
+        margin: 7px 0;
+        margin-left: 0;
+    }
+
+    .nav-list.open {
+        right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-img img {
+        width: 100%;
+        height: auto;
+    }
+
+    .container h5 {
+        margin-bottom: 25px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 20px;
+    }
+
+    .container {
+        font-size: 14px;
+        padding: 15px;
+        margin-top: 60px;
+    }
+
+    .nav-list a {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+
+    .hero {
+        padding: 0 5%;
+        gap: 1rem;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}

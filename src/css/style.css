@@ -275,3 +275,114 @@ section {
         height: auto;
     }
 }
+
+@media (max-width: 768px) {
+    nav header {
+        padding: 15px 5%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .nav-list {
+        display: none; /* Menyembunyikan menu navigasi pada ukuran layar kecil */
+    }
+
+    #menu-icon {
+        display: block;
+        font-size: 30px;
+    }
+
+    .hero {
+        grid-template-columns: 1fr; /* Menyusun hero secara vertikal */
+        padding: 0 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 60px;
+    }
+
+    .hero-text p {
+        font-size: 14px;
+    }
+
+    .hero-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-text a {
+        font-size: 12px;
+        padding: 10px 25px;
+    }
+
+    .sosmed {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+    }
+
+    .sosmed i {
+        margin: 0 10px;
+    }
+
+    section {
+        padding: 0 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    nav header {
+        padding: 10px 5%;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    #menu-icon {
+        font-size: 28px;
+    }
+
+    .hero-text h1 {
+        font-size: 50px;
+        margin-bottom: 20px;
+    }
+
+    .hero-text p {
+        font-size: 13px;
+    }
+
+    .hero-text a {
+        font-size: 11px;
+        padding: 8px 20px;
+    }
+
+    .sosmed i {
+        font-size: 18px;
+        margin: 0 8px;
+    }
+
+    .hero-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .nav-list {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 100%;
+        background: rgb(255, 15, 15);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px 20px;
+        transition: all .55s ease;
+    }
+
+    .nav-list.open {
+        right: 0;
+    }
+}

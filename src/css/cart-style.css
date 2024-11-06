@@ -217,3 +217,148 @@ input[type=number]::-webkit-outer-spin-button {
     color: #1DA1F2;
     transform: scale(1.5);
 }
+
+@media (max-width: 1024px) {
+    /* Adjust header padding for tablet and smaller screens */
+    nav header {
+        padding: 20px 5%;
+    }
+
+    .hero {
+        grid-template-columns: 1fr; /* Stack hero section items vertically */
+        gap: 1rem;
+    }
+
+    .hero-main h5, .hero-main h4 {
+        font-size: 16px; /* Adjust font size for smaller screens */
+    }
+
+    .hero-cart {
+        width: 100%;
+        height: auto; /* Ensure hero cart takes up full width */
+    }
+
+    .btn {
+        width: 100%; /* Make the button full-width for better accessibility */
+        height: 50px;
+        margin-top: 20px;
+    }
+
+    .addItem input,
+    .addItem button {
+        font-size: 14px; /* Adjust input and button font size */
+    }
+
+    .cart {
+        padding: 15px;
+    }
+
+    .cart ul li {
+        flex-direction: column; /* Stack cart items vertically */
+        padding: 10px;
+    }
+
+    .cart p {
+        font-size: 16px; /* Reduce font size of cart description */
+    }
+
+    .sosmed {
+        display: none; /* Hide social media icons on small screens */
+    }
+}
+
+@media (max-width: 768px) {
+    /* Make navigation menu vertical on smaller screens */
+    .nav-list {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    #menu-icon {
+        display: block; /* Show the menu icon */
+    }
+
+    .nav-list a {
+        margin-left: 0;
+        margin-top: 10px;
+        font-size: 18px; /* Adjust font size of nav links */
+    }
+
+    .nav-list.open {
+        display: flex; /* Show the menu when open */
+    }
+
+    .hero-img {
+        display: none; /* Hide hero image on smaller screens */
+    }
+
+    .hero-main {
+        padding: 10px;
+    }
+
+    .btn {
+        width: 100%; /* Ensure button is full width */
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for mobile devices */
+    nav header {
+        padding: 10px 3%;
+    }
+
+    .logo {
+        font-size: 20px; /* Adjust logo size */
+    }
+
+    .hero-main h5 {
+        font-size: 12px; /* Smaller font size for hero text */
+    }
+
+    .hero-main h4 {
+        font-size: 14px;
+    }
+
+    .hero-cart {
+        width: 100%;
+        height: auto;
+    }
+
+    .btn {
+        width: 100%; /* Ensure button fits the screen */
+        height: 50px;
+    }
+
+    .cart ul li {
+        padding: 8px 0; /* Reduce padding for cart items */
+    }
+
+    .cart p {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+
+    .addItem input,
+    .addItem button {
+        font-size: 14px; /* Adjust input and button font size */
+    }
+
+    .sosmed {
+        display: block;
+        position: relative;
+        top: auto;
+        padding: 10px 5%;
+        transform: none;
+    }
+
+    .sosmed i {
+        font-size: 18px; /* Make social icons smaller */
+    }
+}

@@ -251,99 +251,103 @@ input[type=number]::-webkit-outer-spin-button {
     transform: scale(1.5);
 }
 
-@media (max-width: 1535px) {
+@media (max-width: 1024px) {
+    /* Make the header padding smaller */
     nav header {
-        padding: 15px 3%;
-        transition: .2s;
-    }
-
-    .sosmed {
-        padding: 0 3%;
-        transition: .2s;
-    }
-}
-
-@media (max-width: 1460px) {
-    section {
-        padding: 0 12%;
-        transition: .2s;
-    }
-}
-
-@media (max-width: 1340px) {
-    .hero-img {
-        width: 100%;
-        height: auto;
-    }
-
-    .container h5 {
-        margin-bottom: 25px;
-    }
-}
-
-@media (max-width: 1195px) {
-    section {
-        padding: 0 3%;
-        transition: .2s;
-    }
-
-    .container {
-        padding-top: 115px;
-    }
-
-    .hero-img {
-        text-align: center;
-    }
-
-    .hero-img img {
-        width: 560px;
-        height: auto;
+        padding: 20px 5%;
     }
 
     .hero {
-        height: 100%;
+        grid-template-columns: 1fr; /* Make the hero section stack vertically */
         gap: 1rem;
-        grid-template-columns: 1fr;
     }
 
-    .sosmed {
-        display: none;
+    .hero-img {
+        width: 100%;
+        height: auto; /* Make the image fit the screen */
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .btn {
+        width: 100%; /* Make the button full-width */
+        margin-top: 20px;
     }
 }
 
-@media (max-width: 990px) {
-    #menu-icon {
-        display: block;
-    }
-
+@media (max-width: 768px) {
+    /* Make navigation menu vertical on smaller screens */
     .nav-list {
+        display: none;
         position: absolute;
         top: 100%;
-        right: -100%;
-        width: 300px;
-        height: 40vh;
-        background: rgb(255, 15, 15);
-        display: flex;
-        align-items: center;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
         flex-direction: column;
-        padding: 50px 20px;
-        transition: all .55s ease;
+        align-items: center;
+        padding: 15px 0;
+    }
+
+    #menu-icon {
+        display: block; /* Show the menu icon */
     }
 
     .nav-list a {
-        display: block;
-        margin: 7px 0;
         margin-left: 0;
+        margin-top: 10px;
+        font-size: 18px;
     }
 
     .nav-list.open {
-        right: 0;
+        display: flex; /* Display the menu when open */
+    }
+
+    .hero-text h1 {
+        font-size: 50px; /* Smaller font size for hero title */
+    }
+
+    .hero-text p {
+        font-size: 14px;
+        line-height: 1.5; /* Adjust text size for readability */
+    }
+
+    .hero-img {
+        display: none; /* Hide hero image for smaller screens */
+    }
+
+    .sosmed {
+        display: none; /* Hide social media icons */
     }
 }
 
-@media (max-width: 680px) {
-    .hero-img img {
-        width: 100%;
-        height: auto;
+@media (max-width: 480px) {
+    .hero-text h1 {
+        font-size: 40px; /* Further reduce font size for the hero title */
+    }
+
+    .hero-text p {
+        font-size: 13px;
+        line-height: 1.4;
+    }
+
+    .btn {
+        width: 100%; /* Ensure button is always full-width on mobile */
+        height: 50px;
+    }
+
+    .container h5, .container h4 {
+        font-size: 16px; /* Adjust text sizes for smaller screens */
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    /* Modal adjustments for mobile */
+    .modal-content {
+        width: 90%; /* Make modal width responsive */
     }
 }
